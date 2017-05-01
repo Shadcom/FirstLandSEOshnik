@@ -1,0 +1,108 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+
+	header
+		.top-mnu
+			li
+				margin-left: 20px
+			a
+				font-size: 20px
+			
+
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	.wrapper
+		text-align: center
+		nav,.top-contacts
+			float: none
+		.top-mnu
+			display: inline-block
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	.wrapper
+		.top-mnu
+			display: none
+			line-height: 1.3
+			li
+				display: block
+				&:first-child
+					margin-left: 20px	
+				
+		
+		.top-contacts		
+			margin-top: 5px
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	.wrapper
+		text-align: left
+		.top-logo-box
+			font-size: 14px
+		.toggle-mnu
+			right: -132px
+		.menu	
+			width: 40px
+			height: 30px
+			.menu-middle
+				top: 13px
+			.menu-bottom
+				top: 26px	
+			.menu-global
+				border-top: 5px solid #fff
+		.menu-top-click
+			backface-visibility: hidden
+			top: 25px
+			transform: rotate(50deg)
+			transition: 0.55s 0.5s
+		.menu-middle-click
+			opacity: 0
+		.menu-bottom-click
+			backface-visibility: hidden
+			top: 15px
+			transform: rotate(-410deg)
+			transition: 0.55s 0.5s	
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	.wrapper
+		.toggle-mnu
+			right: -122px	
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
