@@ -231,24 +231,46 @@ body
 	float: left
 	color: #000
 
-.section2-talbe
+/*.section2-talbe
 	display: table
 	border-collapse: collapse
-	width: 100%
+	width: 100% */
 
-.section2-talbe-column
+/*.section2-talbe-column
 	display: table-cell
 	vertical-align: top
 	width: 275px
-	border-collapse: collapse
-.section2-talbe-column-block
-	border: 1px solid #898989  //898989 d1d1d1
+	border-collapse: collapse*/
+/*.section2-talbe-column-block
+	border: 1px solid #898989  
 	&:first-child
 		border-top-right-radius: 10px
-		border-top-left-radius: 10px
+		border-top-left-radius: 10px */
 
+.section2-flex-row
+	display: flex
+	flex-direction: row
+	flex-wrap: nowrap
+	justify-content: flex-start
+	align-items: stretch
+	align-content: stretch
+	
 
-
+.section2-flex-column, .section2-flex-column1
+	//padding-top: 15px
+	//padding-bottom: 12px
+	//background-color: $accent
+	width: 100%
+	display: block
+	
+	
+.section2-flex-column-header
+	display: block
+	width: 100%
+	padding-top: 15px
+	padding-bottom: 12px
+	background-color: $accent
+	text-align: center
 
 
 
