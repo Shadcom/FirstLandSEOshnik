@@ -153,7 +153,7 @@ body
 
 .section1
 	background-image: url(/img/header-bg.jpg)
-	background-color: rgba(0,0,0,.44)
+	background-color: rgba(0,0,0,.35)
 	background-blend-mode: darken 
 	background-size: cover
 	min-height: 970px
@@ -171,14 +171,86 @@ body
 
 
 	h1
-		margin-top: 50px
+		margin-top: 45px
 		text-transform: uppercase
 		text-align: center
 		font-family: Proxima-Nova-Bold
 		font-size: 50px
 		color: $accent
 		z-index: 99
+
+
+.section1-h1
+	line-height: 1.2
+.section1-h1-black
+	color: #000
 	
+.section1-h1-cherry
+	color: #980404
+
+.section1-p
+	font-family: $default-font
+	font-size: 25px
+	text-transform: uppercase
+	color: #000
+	text-align: center
+
+.section1-quote
+	font-family: $default-font
+	font-size: 17px
+	color: #fff
+	text-align: center
+	font-style: italic
+
+.section1-buttom
+	text-align: center
+	padding-top: 120px
+
+.section1-button
+	border: 1px solid #bea91b
+	padding: 38px 20px
+	background-color: #bea91b
+	border-radius: 10px
+	font-family: Proxima-Nova-Semibold
+	font-size: 20px
+	color: #000
+	text-transform: uppercase
+	&:hover
+		text-decoration: none
+		color: #000
+		
+		
+.section2
+	margin-top: 55px	
+
+
+.section2-h2
+	font-family: Proxima-Nova-Semibold
+	font-size: 40px
+	text-transform: uppercase
+	float: left
+	color: #000
+
+.section2-talbe
+	display: table
+	border-collapse: collapse
+	width: 100%
+
+.section2-talbe-column
+	display: table-cell
+	vertical-align: top
+	width: 275px
+	border-collapse: collapse
+.section2-talbe-column-block
+	border: 1px solid #898989  //898989 d1d1d1
+	&:first-child
+		border-top-right-radius: 10px
+		border-top-left-radius: 10px
+
+
+
+
+
 
 
 @import "media" // Всегда в конце
