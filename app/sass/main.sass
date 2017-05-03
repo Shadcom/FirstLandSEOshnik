@@ -237,9 +237,11 @@ body
 
 // table section
 
-.section2-center
-	text-align: center
 
+.vcenter
+	display: inline-block
+	float: none
+	vertical-align: middle
 .flex-main
 	display: flex
 	flex-direction: row
@@ -247,6 +249,9 @@ body
 	justify-content: center
 	align-items: stretch
 	align-content: stretch
+
+.section2-center
+	text-align: center
 
 .section2-flex-row
 	display: inline-block
@@ -355,5 +360,139 @@ body
 		text-decoration: none
 		color: #000
 
+/* SECTION 3 */
 
+.section3-column-align	
+	padding-left: 25px
+	padding-right: 25px
+	padding-bottom: 18px
+		
+.section3
+	margin-top: 55px	
+
+.section3-title
+	margin-bottom: 27px
+
+.section3-h2
+	font-family: Proxima-Nova-Semibold
+	font-size: 40px
+	text-transform: uppercase
+	float: left
+	color: #000
+
+.section3-center
+	text-align: center
+
+.section3-flex-row
+	display: inline-block
+
+.section3-flex-column-header
+	display: block
+	width: 100%
+	padding-top: 15px
+	padding-bottom: 9px
+	background-color: $accent
+	text-align: center
+	border-top: 2px solid #898989
+	border-left: 2px solid #898989
+	border-right: 1px solid #898989
+	border-top-left-radius: 10px
+	border-top-right-radius: 10px
+	font-family: Proxima-Nova-Regular
+	font-size: 14px
+	&:last-child
+		border-right: 2px solid #898989
+
+.section3-flex-block
+	border-top: 1px solid #d1d1d1
+	border-left: 2px solid #898989
+	border-right: 1px solid #898989
+	text-align: center
+	&:last-child
+		border-bottom: 2px solid #898989
+		padding-bottom: 15px
+
+.section3-flex-block-title
+	border-top: 1px solid #d1d1d1
+	border-left: 2px solid #898989
+	border-right: 1px solid #898989
+	text-align: left
+	padding-right: 5px
+	
+	&:last-child
+		border-bottom: 2px solid #898989	
+
+.section3-flex-block-title-2-string
+	position: relative
+	border-top: 1px solid #d1d1d1
+	border-left: 2px solid #898989
+	border-right: 1px solid #898989
+	text-align: left
+	padding-left: 24px
+	line-height: 1.1
+	&::before
+		content: ''
+		display: block
+		height: 10px
+		width: 10px
+		position: absolute
+		top: 14px
+		left: 5px
+		background-image: url(/img/yellow-point.png)
+		background-repeat: no-repeat
+
+.section3-flex-block-title-3-string
+	position: relative
+	border-top: 1px solid #d1d1d1
+	border-left: 2px solid #898989
+	border-right: 1px solid #898989
+	text-align: left
+	padding-left: 24px
+	line-height: 1.1
+	&::before
+		content: ''
+		display: block
+		height: 10px
+		width: 10px
+		position: absolute
+		top: 23px
+		left: 5px
+		background-image: url(/img/yellow-point.png)
+		background-repeat: no-repeat
+
+
+.section3-price
+	font-family: Proxima-Nova-Bold
+	font-size: 30px
+	color: #bea91b
+.section3-rub
+	margin-bottom: 11px
+	margin-left: 2px
+
+.section3-buttom
+	text-align: center
+	margin-bottom: 15px
+	margin-left: 25px
+	margin-right: 24px
+
+.section3-button
+	border: 1px solid #bea91b
+	padding: 20px 70px
+	background-color: #bea91b
+	border-radius: 10px
+	font-family: Proxima-Nova-Semibold
+	font-size: 20px
+	color: #000
+	text-transform: uppercase
+	&:hover
+		text-decoration: none
+		color: #000
+
+
+
+
+
+
+
+/*-------------------------------------*/
 @import "media" // Всегда в конце
