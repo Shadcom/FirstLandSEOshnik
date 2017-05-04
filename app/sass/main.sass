@@ -509,6 +509,8 @@ body
 .column4
 	border-right: 2px solid #898989
 
+/* SECTION 4 */
+
 .section4
 	background-image: url(/img/section4-bg.jpg)
 	background-color: rgba(255,255,255,.57)
@@ -517,6 +519,101 @@ body
 	min-height: 970px
 	background-position: center
 	position: relative
+
+.section4-h2
+	font-family: Proxima-Nova-Semibold
+	font-size: 50px
+	color: #000
+	margin-top: 55px
+	margin-bottom: 0px
+	text-transform: uppercase
+.section4-p-regular-25
+	font-family: $default-font
+	font-size: 25px
+	color: #000
+	line-height: 1.1
+	margin-top: 0px
+.section4-p-semi-30
+	font-family: Proxima-Nova-Semibold
+	font-size: 30px
+	color: #000
+	line-height: 1.1	
+
+.section4-column-header
+	text-align: center
+	border-top: 4px solid #7d6100
+	background-image: url(/img/email-header-grad.png)
+	background-position: top
+	border-top-left-radius: 10px
+	border-top-right-radius: 10px
+
+.column-email-title	
+	font-family: Proxima-Nova-Semibold
+	font-size: 30px
+	color: #000
+	text-transform: uppercase
+	padding-bottom: 10px
+	padding-top: 7px
+
+.section4-column-body
+	background-color: #e0e0e0
+	padding-top: 10px
+	padding-bottom: 12px
+	border-bottom: 4px solid #7d6100
+
+.section4-ul
+	margin-top: 0px
+	margin-bottom: 0px
+	list-style-type: none
+	padding-left: 130px
+	line-height: 2
+	.checkon
+		position: relative
+		font-family: Proxima-Nova-Regular
+		font-size: 20px
+		color: #000
+
+		&::before
+			content: ''
+			display: block
+			background-image: url(/img/check-on.png)
+			width: 47px
+			height: 40px
+			position: absolute
+			top: 0
+			left: -70px
+
+.section4-shtuk
+	font-family: Proxima-Nova-Regular
+	font-size: 30px
+	color: #4d2c02
+	text-align: center
+
+.section4-price
+	font-family: Proxima-Nova-Bold
+	font-size: 30px
+	color: #000
+	text-align: center
+
+.section4-column-footer
+	text-align: center
+	border-bottom: 4px solid #7d7d7d
+	background-image: url(/img/email-header-grad.png)
+	background-position: top
+	border-bottom-left-radius: 10px
+	border-bottom-right-radius: 10px
+	font-family: Proxima-Nova-Bold
+	font-size: 30px
+	color: #000
+	text-align: center
+	text-transform: uppercase
+	padding-bottom: 15px
+	padding-top: 15px
+.section4-zakaz
+		color: #000
+		&:hover
+			color: #000
+
 
 /*-------------------------------------*/
 @import "media" // Всегда в конце
