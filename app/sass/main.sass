@@ -533,11 +533,24 @@ body
 	color: #000
 	line-height: 1.1
 	margin-top: 0px
+.section4-p-regular-20
+	font-family: $default-font
+	font-size: 20px
+	color: #000
+	line-height: 1.1
+	margin-top: 0px
+
 .section4-p-semi-30
 	font-family: Proxima-Nova-Semibold
 	font-size: 30px
 	color: #000
-	line-height: 1.1	
+	line-height: 1.1
+	margin-top: 20px
+	margin-bottom: 20px	
+
+.section4-column-email
+	box-shadow: 3px 0 5px rgba(0,0,0,0.5)
+	border-radius: 10px	
 
 .section4-column-header
 	text-align: center
@@ -554,6 +567,13 @@ body
 	text-transform: uppercase
 	padding-bottom: 10px
 	padding-top: 7px
+
+.column-email-title2	
+	font-family: Proxima-Nova-Semibold
+	font-size: 30px
+	color: #000
+	text-transform: uppercase
+	line-height: 1.17
 
 .section4-column-body
 	background-color: #e0e0e0
@@ -582,6 +602,21 @@ body
 			position: absolute
 			top: 0
 			left: -70px
+	.checkoff
+		position: relative
+		font-family: Proxima-Nova-Regular
+		font-size: 20px
+		color: #000
+
+		&::before
+			content: ''
+			display: block
+			background-image: url(/img/check-off.png)
+			width: 48px
+			height: 42px
+			position: absolute
+			top: 2px
+			left: -75px		
 
 .section4-shtuk
 	font-family: Proxima-Nova-Regular
@@ -615,5 +650,37 @@ body
 			color: #000
 
 
+
+/* SECTION 5*/
+
+.section5
+	background-image: url(/img/5section-bg.jpg)
+	background-size: cover
+	min-height: 970px
+	background-position: center
+	position: relative
+	border-top: 2px solid #000
+
+.section5-h2
+	font-family: Proxima-Nova-Bold
+	font-size: 50px
+	color: #000
+	text-transform: uppercase
+	margin-top: 400px
+
+.section5-p1
+	font-family: $default-font
+	font-size: 25px
+	color: #000
+	text-transform: uppercase
+	span
+		font-family: Proxima-Nova-Bold
+		font-size: 30px	
+
+.section5-p2
+	font-family: $default-font
+	font-size: 20px
+	color: #000
+	text-transform: uppercase
 /*-------------------------------------*/
 @import "media" // Всегда в конце
