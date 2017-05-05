@@ -82,4 +82,24 @@ $(".sbl1").animated("flipInY");
 $(".sbl2").animated("flipInY");
 $(".sbl3").animated("flipInY");
 
+
+//E-mail Ajax Send
+	$("forms").submit(function() { //Change
+		var th = $(this);
+		$.ajax({
+			type: "POST",
+			url: "mail.php", //Change
+			data: th.serialize()
+		}).done(function() {
+			alert("Thank you!");
+			setTimeout(function() {
+				// Done Functions
+				th.trigger("reset");
+			}, 1000);
+		});
+		return false;
+	});
+
+
+
 });
