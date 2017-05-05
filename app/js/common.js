@@ -99,6 +99,11 @@ $(".sbl3").animated("flipInY");
 		});
 		return false;
 	});
+//*********** */
+
+$('.open-popup-link').magnificPopup({
+  type:'inline',
+});
 
 
 
