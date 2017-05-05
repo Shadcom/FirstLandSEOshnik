@@ -3,19 +3,19 @@
 @import "vars"
 
 *::-webkit-input-placeholder
-	color: #666
+	color: #fff
 	opacity: 1
 
 *:-moz-placeholder
-	color: #666
+	color: #fff
 	opacity: 1
 
 *::-moz-placeholder
-	color: #666
+	color: #fff
 	opacity: 1
 
 *:-ms-input-placeholder
-	color: #666
+	color: #fff
 	opacity: 1
 
 body input:focus:required:invalid,
@@ -152,7 +152,7 @@ body
 //--------------------	end mnu		
 
 .section1
-	background-image: url(/img/header-bg.jpg)
+	background-image: url(../img/header-bg.jpg)
 	background-color: rgba(0,0,0,.35)
 	background-blend-mode: darken 
 	background-size: cover
@@ -376,7 +376,8 @@ body
 
 .section3-title
 	margin-bottom: 27px
-
+	animation-duration: 1s
+	
 .section3-h2
 	font-family: Proxima-Nova-Semibold
 	font-size: 40px
@@ -453,7 +454,7 @@ body
 		position: absolute
 		top: 14px
 		left: 5px
-		background-image: url(/img/yellow-point.png)
+		background-image: url(../img/yellow-point.png)
 		background-repeat: no-repeat
 
 .section3-flex-block-title-3-string
@@ -472,7 +473,7 @@ body
 		position: absolute
 		top: 23px
 		left: 5px
-		background-image: url(/img/yellow-point.png)
+		background-image: url(../img/yellow-point.png)
 		background-repeat: no-repeat
 
 
@@ -512,7 +513,7 @@ body
 /* SECTION 4 */
 
 .section4
-	background-image: url(/img/section4-bg.jpg)
+	background-image: url(../img/section4-bg.jpg)
 	background-color: rgba(255,255,255,.57)
 	background-blend-mode: lighten 
 	background-size: cover
@@ -556,7 +557,7 @@ body
 .section4-column-header
 	text-align: center
 	border-top: 4px solid #7d6100
-	background-image: url(/img/email-header-grad.png)
+	background-image: url(../img/email-header-grad.png)
 	background-position: top
 	border-top-left-radius: 10px
 	border-top-right-radius: 10px
@@ -597,7 +598,7 @@ body
 		&::before
 			content: ''
 			display: block
-			background-image: url(/img/check-on.png)
+			background-image: url(../img/check-on.png)
 			width: 47px
 			height: 40px
 			position: absolute
@@ -612,7 +613,7 @@ body
 		&::before
 			content: ''
 			display: block
-			background-image: url(/img/check-off.png)
+			background-image: url(../img/check-off.png)
 			width: 48px
 			height: 42px
 			position: absolute
@@ -634,7 +635,7 @@ body
 .section4-column-footer
 	text-align: center
 	border-bottom: 4px solid #7d7d7d
-	background-image: url(/img/email-header-grad.png)
+	background-image: url(../img/email-header-grad.png)
 	background-position: top
 	border-bottom-left-radius: 10px
 	border-bottom-right-radius: 10px
@@ -655,7 +656,7 @@ body
 /* SECTION 5*/
 
 .section5
-	background-image: url(/img/5section-bg.jpg)
+	background-image: url(../img/5section-bg.jpg)
 	background-size: cover
 	min-height: 970px
 	background-position: center
@@ -754,7 +755,7 @@ body
 	margin-bottom: 27px		
 
 .footer	
-	background-image: url(/img/footer-bg.jpg)
+	background-image: url(../img/footer-bg.jpg)
 	background-size: cover
 	min-height: 800px
 	background-position: center
@@ -809,7 +810,7 @@ body
 .forms
 	margin-bottom: 163px
 	margin-top: 50px
-	input
+	input[type="text"]
 		width: 100%
 		background-color: transparent
 	    border: 2px solid #fff
@@ -854,6 +855,22 @@ placeholder
 	font-size: 25px
 	color: #fff	
 
+
+
+
+.ya-pic-sett
+	animation-duration: 2s
+	animation-delay: 1s
+
+.email-left,.email-right
+	animation-duration: 1.5s
+
+.sbl1,.sbl2,.sbl3
+	animation-duration: 1.5s
+.sbl2
+	animation-delay: 1s
+.sbl3
+	animation-delay: 1.5s	
 
 /*-------------------------------------*/
 @import "media" // Всегда в конце

@@ -35,6 +35,51 @@ $(function() {
 
 Menu.init();
 
+ // плавный скрол
+$("#menu").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1500);
+    });
+// плавный скрол    
 
+$.fn.animated = function(inEffect) {
+		$(this).each(function() {
+			var ths = $(this);
+			ths.css("opacity", "0").addClass("animated").waypoint(function(dir) {
+				if (dir === "down") {
+					ths.addClass(inEffect).css("opacity", "1");
+				};
+			}, {
+				offset: "90%"
+			});
+
+		});
+	};
+
+
+//$(".section4-h2").addClass('animated fadeInRight');
+
+
+$(".section1-h1").animated("fadeInDownBig");
+$(".section1-p").animated("fadeInRight");
+$(".section1-quote").animated("fadeInLeft");
+
+$(".ya-pic-sett").animated("flipInX");
+$(".section2-flex-row").animated("fadeInDownBig");
+
+
+
+$(".section3-title").animated("bounceInDown");
+
+
+$(".email-left").animated("bounceInLeft");
+$(".email-right").animated("bounceInRight");
+
+  
+$(".sbl1").animated("flipInY");
+$(".sbl2").animated("flipInY");
+$(".sbl3").animated("flipInY");
 
 });

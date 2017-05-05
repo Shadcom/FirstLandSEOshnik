@@ -45,7 +45,7 @@
 				<div class="row">
 					<div class="col-md-4 col-sm-12 wrapper">
 						<div class="top-logo-box">
-							<img src="/img/logo.png" alt="">
+							<img src="img/logo.png" alt="">
 							<div class="top-slogan">
 								<div class="top-slogan1">Marketing</div>
 								<div class="top-slogan2"><span>Реклама -</span> двигатель торговли!</div>
@@ -62,13 +62,13 @@
 					</div>
 
 					<div class="col-md-8 col-sm-12 wrapper">
-						<nav class="top-mnu">
+						<nav class="top-mnu" id="menu">
 							<ul>
-								<li class="active"><a href="#">Главная</a></li>
-								<li><a href="#">Тарифы</a></li>
-								<li><a href="#">E-mail рассылка</a></li>
-								<li><a href="#">SMM</a></li>
-								<li><a href="#">Контакты</a></li>
+								<li class="active"><a href="#main">Главная</a></li>
+								<li><a href="#tarif">Тарифы</a></li>
+								<li><a href="#email">E-mail рассылка</a></li>
+								<li><a href="#smm">SMM</a></li>
+								<li><a href="#cont">Контакты</a></li>
 							</ul>
 						</nav>
 						<div class="top-contacts">
@@ -88,7 +88,7 @@
 	</header>
 
 	<section class="section1">
-
+		<div id="main"></div>
 		<div class="container">
 			<div class="row">
 
@@ -106,13 +106,17 @@
 	</section>
 
 	<section class="section2">
+		<div id="tarif"></div>
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-3 section2-center vcenter">
+					<div class="ya-pic-sett">
 					<img src="img/yad-settings.png">
+					</div>
 				</div><div class="col-sm-9 section2-center vcenter">
-					<h2 class="section2-h2">Стоимость создания <br/> рекламной компании</h2>
-
+					<div class="ya-pic-sett">
+						<h2 class="section2-h2">Стоимость создания <br/> рекламной компании</h2>
+					</div>
 				</div>
 			</div>
 
@@ -500,6 +504,7 @@
 <!-- SECTION 3 -->
 
 	<section class="section3">
+		
 		<div class="container">
 			<div class="row section3-title">
 				<div class="col-sm-8 vcenter"><h2 class="section3-h2">ведение рекламных кампаний</h2></div><div class="col-sm-4 vcenter"><img src="img/yad-gdir.png" class="yadgdir-img"></div>
@@ -781,6 +786,7 @@
 	</section>
 
 	<section class="section4">
+		<div id="email"></div>
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 section2-center">
@@ -795,7 +801,7 @@
 			<div class="row">
 				<div class="col-md-1"></div>
 				<div class="col-md-5">
-					<div class="section4-column-email">
+					<div class="section4-column-email email-left">
 						<div class="section4-column-header">
 							<div class="column-email-title">
 								Ручная сборка E-mail
@@ -825,7 +831,7 @@
 				</div>
 				
 				<div class="col-md-5">
-					<div class="section4-column-email">
+					<div class="section4-column-email email-right">
 						<div class="section4-column-header">
 							<div class="column-email-title2">
 								сборка E-mail при  <br/>помощи софтов
@@ -864,10 +870,10 @@
 
 <!--SECTION 5-->
 	<section class="section5">
-
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 section2-center">
+					<div id="smm"></div>
 					<h2 class="section5-h2">SMM-продвижение</h2>
 
 					<p class="section5-p1"><span>Social Media Marketing</span> - способ привлечения внимания к продукции 
@@ -878,7 +884,7 @@
 
 			<div class="row">
 				<div class="col-sm-4">
-					<div class="section5-soc-block">
+					<div class="section5-soc-block sbl1">
 						<p class="section5-soc-text">Размещение текстово-графических объявлений 
 						на популярных форумах и самых больших группах 
 						смежной тематики в течение месяца.</p>
@@ -890,7 +896,7 @@
 					</div>
 				</div>
 				<div class="col-sm-4">
-					<div class="section5-soc-block">
+					<div class="section5-soc-block sbl2">
 						<p class="section5-soc-text2">Рассылка приглашений в личных сообщениях 
 подписчикам из групп конкурентов.</p>
 						<div class="section5-shtuk">1 000 шт.</div> 
@@ -901,7 +907,7 @@
 					</div>
 				</div>
 				<div class="col-sm-4">
-					<div class="section5-soc-block">
+					<div class="section5-soc-block sbl3">
 						<p class="section5-soc-text3">Оплата за подписчиков.
 Только реальные пользователи, добровольно, 
 вступившие в группу по схожим интересам.</p>
@@ -930,6 +936,7 @@
 
 
 	<footer>
+		<div id="cont"></div>
 		<div  class="footer">
 			<div class="container">
 				<div class="row">
